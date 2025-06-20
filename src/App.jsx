@@ -1,6 +1,5 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { DarkModeProvider } from './context/DarkModeContext';
-import Navbar from './components/navbar';
 import Index from './pages/index';
 import LoginPage from './pages/login';
 import Walkthrough from './pages/walkthrough';
