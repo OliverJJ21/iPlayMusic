@@ -1,0 +1,132 @@
+.albums-header {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        text-transform: uppercase;
+    }
+
+    .header-icon {
+        font-size: 1.5em;
+    }
+}
+
+.albums-title {
+    background: linear-gradient(to bottom, #EE0979, #FF6A00);
+    padding-left: 1rem;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.featured-section {
+    .featured-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .featured-title {
+            color: #341931;
+            font-size: 1.2rem;
+        }
+
+        .view-all {
+            color: #ff2f7b;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+    }
+
+    .album-gallery {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 0.5rem;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .album-image {
+            min-width: 130px;
+            width: 130px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+.releases-section {
+    .releases-header {
+        display: flex;
+        padding: 1em;
+        justify-content: space-between;
+        align-items: center;
+
+        .releases-title {
+            color: #341931;
+            font-size: 1.2rem;
+        }
+
+        .view-all {
+            color: #ff2f7b;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+    }
+
+    .releases-gallery {
+        display: grid;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 0.5rem;
+        padding-bottom: 6rem;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .album-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.5rem;
+            border-radius: 8px;
+
+            .album-info {
+                flex: 1;
+
+                .album-title {
+                    margin: 0;
+                    font-size: 1rem;
+                    color: #341931;
+                }
+
+                .album-artist {
+                    margin: 0.2rem 0;
+                    font-size: 0.9rem;
+                    color: #8c7d8b;
+                }
+
+
+            }
+
+            .album-songs {
+                margin: 0.2rem 0;
+                font-size: 0.8rem;
+                color: #8c7d8b;
+            }
+        }
+
+        .album-image {
+            min-width: 50px;
+            width: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

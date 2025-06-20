@@ -1,0 +1,93 @@
+@use "../animation.scss";
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    width: 100%;
+    animation: slideIn 0.8s ease-in-out;
+    min-height: 100vh;
+
+    .form-group {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        label {
+            font-weight: 700;
+            color: #341931;
+        }
+
+        input {
+            display: flex;
+            align-items: center;
+            border: none;
+            border-bottom: 3px solid #341931;
+            font-size: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+
+            &::placeholder {
+                color: #665264;
+            }
+        }
+
+        svg {
+            position: absolute;
+            right: 0.8rem;
+            bottom: 0.8rem;
+            font-size: 1.5rem;
+            color: #341931;
+        }
+    }
+
+    .login-button {
+        background-color: white;
+        border: 3px solid #341931;
+        color: #341931;
+        padding: 1rem;
+        border-radius: 50px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .one-touch-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+
+        p {
+            color: #341931;
+            font-weight: 300;
+        }
+    }
+
+    .error-message {
+        color: red;
+    }
+
+    .one-touch-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff1168;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        text-decoration: none;
+
+        svg {
+            font-size: 2.5rem;
+            fill: #fff0f5;
+        }
+    }
+
+    h1 {
+        margin-bottom: 10rem;
+        color: #341931;
+    }
+}

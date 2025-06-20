@@ -1,0 +1,12 @@
+@use './fonts.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+*:not(.player-container, .player-container *, .player__nav, .player__nav *, .intro-wrapper, .intro-wrapper *, .navbar, .navbar *) {
+    animation: slideIn 0.8s ease-in-out;
+}
