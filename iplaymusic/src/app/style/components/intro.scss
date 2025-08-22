@@ -1,0 +1,29 @@
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fadeInUpAndSpin 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeInUpAndSpin {
+    0% {
+        opacity: 0;
+        scale: 1;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        opacity: 0.5;
+        scale: 1.5;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        opacity: 1;
+        scale: 2;
+        transform: rotate(360deg);
+    }
+}

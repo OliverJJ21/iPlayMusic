@@ -1,0 +1,267 @@
+body.dark-mode {
+  background-color: #341931;
+
+  .login-form {
+    background-color: #ff1168;
+    color: white;
+
+    .error-message {
+      color: white;
+    }
+
+    .one-touch-login {
+      .one-touch-button {
+        background: #ff4d8e;
+      }
+      p {
+        color: white;
+      }
+    }
+
+    h1,
+    label,
+    ::placeholder,
+    input[type="text"] {
+      color: white;
+    }
+    input[type="text"],
+    input[type="password"] {
+      color: lightgrey;
+    }
+
+    input {
+      background-color: #ff1168;
+      border-bottom: 3px solid white;
+    }
+
+    .login-button {
+      border: 3px solid white;
+      background-color: #ff1168;
+      color: white;
+    }
+  }
+
+  .form-group {
+    svg {
+      fill: white;
+    }
+  }
+
+  .player-container {
+    background-color: #341931;
+  }
+
+  button {
+    background-color: #333;
+    color: white;
+  }
+
+  .walkthrough-container {
+    background: linear-gradient(115deg, #ee0979, #ff6a00);
+  }
+
+  .walkthrough-wrapper {
+    h1,
+    p {
+      color: white;
+    }
+
+    .slide-controls {
+      .round-button {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+
+        &.active {
+          background-color: white;
+          color: #fc5915;
+        }
+      }
+    }
+  }
+
+  .skip-button {
+    background: none;
+    color: white;
+  }
+
+  .intro-wrapper {
+    h1 {
+      color: white;
+    }
+  }
+
+  .navbar {
+    background-color: #111625;
+  }
+
+  .featured-header {
+    color: white;
+  }
+
+  .playlists {
+    background-color: #341931;
+
+    &__name {
+      color: white;
+    }
+
+    &__controls {
+      button {
+        background-color: transparent;
+        color: #ff1168;
+      }
+    }
+  }
+  .album-details {
+    &__song {
+      &-title,
+      &-artist,
+      &-duration {
+        color: white;
+      }
+    }
+  }
+
+  .categories-header {
+    color: white;
+  }
+
+  .categories-list {
+    .subcategory-item {
+      color: white;
+
+      .arrow-icon {
+        color: white;
+      }
+    }
+  }
+
+  .album-details {
+    &__nav {
+      &-icon {
+        color: white;
+      }
+
+      p {
+        color: white;
+      }
+    }
+
+    &__title {
+      color: white;
+    }
+
+    &__genres {
+      &-text {
+        color: white;
+      }
+
+      &-tag {
+        background: #ff1168;
+        color: white;
+      }
+    }
+
+    &__subtitle {
+      color: white;
+    }
+  }
+
+  .songs-section-title {
+    color: white;
+  }
+
+  .player-wrapper {
+    background-color: #341931;
+    .player__nav {
+      &-icon {
+        color: white;
+      }
+
+      p {
+        color: white;
+      }
+    }
+
+    .track-info {
+      .title {
+        color: white;
+      }
+
+      .artist {
+        color: white;
+      }
+    }
+
+    .progress-time {
+      .time-current,
+      .time-total {
+        color: white;
+      }
+    }
+  }
+  .alternate-design {
+    background-color: transparent;
+  }
+
+  .player-container {
+    .cover-art:not(.alternate-design) {
+      position: relative;
+      width: 350px;
+      height: 350px;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      background-image: url("../pic/darkmode/sound-wave-dark.png");
+      background-size: cover;
+      background-position: center;
+      .alternate-design {
+        background: none;
+      }
+    }
+  }
+
+  .albums-header {
+    .header-icon {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+
+  .albums-title {
+    color: white;
+  }
+
+  .featuared-header {
+    .view-all {
+      color: #e61261;
+    }
+  }
+
+  .featured-section {
+    .featured-title {
+      color: white;
+    }
+  }
+
+  .releases-section {
+    .releases-title {
+      color: white;
+    }
+    .view-all {
+      color: #e61261;
+    }
+    .album-item {
+      .album-info {
+        .album-title {
+          color: white;
+        }
+      }
+      .album-songs {
+        color: #cbcbcb;
+      }
+    }
+  }
+}
