@@ -4,7 +4,9 @@ import CookieLoginLink from "../components/cookieloginlink";
 export default function LoginPage() {
     return (
         <>
-            <Login children={<CookieLoginLink/>} />
+            <Login>
+            <CookieLoginLink/>
+            </Login>
         </>
     );
 }
