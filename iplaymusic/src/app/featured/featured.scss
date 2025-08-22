@@ -1,0 +1,58 @@
+@use "../style/animation";
+
+.featured-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+    p {
+        text-transform: uppercase;
+    }
+
+    .header-icon {
+        font-size: 1.5em;
+    }
+}
+
+.header-title-featured {
+    padding: 0.5em;
+    background: linear-gradient(to bottom, #ee0979 50%, #ff6a00 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.featured__card {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    margin-bottom: 3em;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+
+    &-image{
+        border-radius: 8px;
+        margin: auto;
+    }
+
+    &-content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        padding: 1em;
+        z-index: 1;
+        color: white;
+    }
+
+    &-title {
+        margin: 0.1em;
+        font-size: 2.2em;
+    }
+
+    &-description {
+        margin: 0.5em;
+        color: #d4d3db;
+    }
+}

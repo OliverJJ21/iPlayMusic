@@ -1,16 +1,18 @@
-
+// import { DarkModeProvider } from '@/context/DarkModeContext';
+import './globals.scss';
 
 export const metadata = {
-  title: "IPlayMusic",
-  description: "Music App with NextJS",
+  title: 'iPlayMusic',
+  description: 'Music App',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={``}>
-        {children}
-        <p>Test123Layoutjs</p>
+      <body>
+        {/* <DarkModeProvider> */}
+          {children}
+        {/* </DarkModeProvider> */}
       </body>
     </html>
   );
